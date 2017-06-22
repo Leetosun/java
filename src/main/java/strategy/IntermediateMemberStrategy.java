@@ -1,7 +1,7 @@
 package strategy;
 
 /**
- * Created by Administrator on 2017/5/11 0011.
+ * Created by LeoToSun on 2017/5/11
  */
 public class IntermediateMemberStrategy implements MemberStrategy {
     public double calcPrice(double booksPrice) {

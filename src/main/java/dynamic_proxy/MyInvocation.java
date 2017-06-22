@@ -24,7 +24,7 @@ public class MyInvocation implements InvocationHandler {
     }
 
     public Object getProxy() {
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        ClassLoader classLoader = object.getClass().getClassLoader();
         Class<?>[] classes = object.getClass().getInterfaces();
         return Proxy.newProxyInstance(classLoader, classes, this);
     }
