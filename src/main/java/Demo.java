@@ -1,5 +1,3 @@
-import enums.DemoEnum;
-
 import java.text.ParseException;
 
 /**
@@ -7,7 +5,7 @@ import java.text.ParseException;
  * demo
  */
 public class Demo {
-    public static void main(String[] arg) throws ParseException {
+    public static void main(String[] arg) throws ParseException, InterruptedException {
 //        System.out.println("Hello GitHub");
 //        System.out.println(Integer.valueOf("127") == Integer.valueOf("127"));
 //        System.out.println(Integer.valueOf("128") == Integer.valueOf("128"));

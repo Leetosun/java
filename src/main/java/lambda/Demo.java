@@ -14,7 +14,7 @@ public class Demo {
     }
 
     public static void method(int i, int j) {
-        System.out.println(i*j);
+        System.out.println(i * j);
     }
 
     public void fun(int i, int j, DemoFI<Integer, Integer> demoFI) {
