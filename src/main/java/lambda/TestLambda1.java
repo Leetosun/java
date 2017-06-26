@@ -15,7 +15,7 @@ import java.util.function.Supplier;
  */
 public class TestLambda1 {
 
-    //---------------------Consumer<T> 消费型接口-------------------------
+    // ---------------------Consumer<T> 消费型接口-------------------------
     @Test
     public void testConsumer() {
         happy(1000, m -> System.out.println(m));
@@ -25,7 +25,7 @@ public class TestLambda1 {
         con.accept(money);
     }
 
-    //---------------------Supplier<T> 供给型接口--------------------------
+    // ---------------------Supplier<T> 供给型接口--------------------------
     @Test
     public void testSupplier() {
         List<Long> list = getNumList(10, System::currentTimeMillis);
@@ -40,7 +40,7 @@ public class TestLambda1 {
         return list;
     }
 
-    //---------------------Function<T> 函数型接口---------------------------
+    // ---------------------Function<T> 函数型接口---------------------------
     @Test
     public void testFunction() {
         Integer index = strHandler("LeeToSun", s -> s.indexOf("S"));
@@ -51,7 +51,7 @@ public class TestLambda1 {
         return fun.apply(str);
     }
 
-    //---------------------Predicate<T> 断言型接口--------------------------
+    // ---------------------Predicate<T> 断言型接口--------------------------
     @Test
     public void testPredicate() {
         List<String> stringList = Arrays.asList("Hello", "Lambda", "Go", "Java");

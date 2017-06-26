@@ -1,6 +1,3 @@
-import proxy.Proxy
-import proxy.RealSubject
-
 /**
  * Created by LeeToSun on 2017/6/23
  */

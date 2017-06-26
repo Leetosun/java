@@ -3,8 +3,7 @@ package convert_bean;
 import org.springframework.beans.BeanUtils;
 
 /**
- * Created by LeeToSun on 2017/5/6
- * 来源
+ * Created by LeeToSun on 2017/5/6 来源
  */
 public class DemoInputDTO {
     private String name;
@@ -38,7 +37,7 @@ public class DemoInputDTO {
     public static class DemoInputDTOConvert implements DTOConvert<DemoInputDTO, Demo> {
         public Demo convert(DemoInputDTO demoInputDTO) {
             Demo demo = new Demo();
-            //Spring的bean包
+            // Spring的bean包
             BeanUtils.copyProperties(demoInputDTO, demo);
             return demo;
         }

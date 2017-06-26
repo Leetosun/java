@@ -1,8 +1,7 @@
 package convert_bean;
 
 /**
- * Created by LeeToSun on 2017/5/6
- * 目标
+ * Created by LeeToSun on 2017/5/6 目标
  */
 public class Demo {
     private String name;

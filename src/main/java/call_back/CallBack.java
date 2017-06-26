@@ -5,5 +5,6 @@ package call_back;
  */
 public interface CallBack {
     void solve(String result);
+
     void error(String message);
 }

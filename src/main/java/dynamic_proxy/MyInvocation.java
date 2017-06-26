@@ -5,8 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * Created by LeeToSun on 2017/5/11
- * 实现
+ * Created by LeeToSun on 2017/5/11 实现
  */
 public class MyInvocation implements InvocationHandler {
 

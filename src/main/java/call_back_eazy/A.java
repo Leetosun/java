@@ -10,7 +10,7 @@ public class A {
         b.b();
     }
 
-    public void callBack(){
+    public void callBack() {
         System.out.println("A的回调");
     }
 
