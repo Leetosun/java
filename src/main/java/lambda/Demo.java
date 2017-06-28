@@ -8,7 +8,7 @@ import org.junit.Test;
 public class Demo {
 
     @Test
-    public void main(String[] args) {
+    public void main() {
         // fun(5, 6, (i, j) -> method(i,j));
         fun(5, 6, Demo::method);
     }
