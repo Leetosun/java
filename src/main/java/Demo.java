@@ -1,14 +1,34 @@
-import java.text.ParseException;
+import lambda.DemoFI;
+import org.junit.Test;
 
 /**
  * Created by LeeToSun on 2017/5/5 demo
  */
 public class Demo {
-    public static void main(String[] arg) throws ParseException, InterruptedException {
+
+    @Test
+    public void lambdaTest() {
+        int i = (int) (Math.random() * 10);
+        int j = (int) (Math.random() * 10);
+        System.out.print(i + "x" + j + "=");
+        fun(i, j, Demo::getX);
+        fun(i, j, (a, b) -> getX(i, j));
+    }
+
+    private static void getX(int i, int j) {
+        System.out.println(i * j);
+    }
+
+    private void fun(int i, int j, DemoFI<Integer, Integer> demoFI) {
+        demoFI.test(i, j);
+    }
+
+    @Test
+    public void test1() {
         // System.out.println("Hello GitHub");
-        // System.out.println(Integer.valueOf("127") == Integer.valueOf("127"));
-        // System.out.println(Integer.valueOf("128") == Integer.valueOf("128"));
-        // System.out.println(Integer.parseInt("128") == Integer.valueOf("128"));
+        System.out.println(Integer.valueOf("127") == Integer.valueOf("127"));
+        System.out.println(Integer.valueOf("128") == Integer.valueOf("128"));
+        System.out.println(Integer.parseInt("128") == Integer.valueOf("128"));
 
         // SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 
