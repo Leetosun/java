@@ -7,6 +7,16 @@ import org.junit.Test;
 public class Demo {
 
     @Test
+    public void stringBuilderTest() {
+        System.out.println(new StringBuilder(1).append(2).toString());
+        String s = "1";
+        s = "2";
+        s = new StringBuilder(s).append("3").toString();
+        s = new StringBuilder(s).append("4").toString();
+        System.out.println(s);
+    }
+
+    @Test
     public void lambdaTest() {
         int i = (int) (Math.random() * 10);
         int j = (int) (Math.random() * 10);
@@ -26,6 +36,7 @@ public class Demo {
     @Test
     public void test1() {
         // System.out.println("Hello GitHub");
+        String s = "";
         System.out.println(Integer.valueOf("127") == Integer.valueOf("127"));
         System.out.println(Integer.valueOf("128") == Integer.valueOf("128"));
         System.out.println(Integer.parseInt("128") == Integer.valueOf("128"));
