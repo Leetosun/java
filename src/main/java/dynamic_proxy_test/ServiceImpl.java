@@ -1,4 +1,4 @@
-package test;
+package dynamic_proxy_test;
 
 /**
  * Created by LeeToSun on 2017/6/5
@@ -6,7 +6,8 @@ package test;
 public class ServiceImpl implements Service {
 
     public String hello() {
-        return "中午好";
+        System.out.println("中午好");
+        return "end";
     }
 
 }

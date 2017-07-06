@@ -1,4 +1,4 @@
-package test;
+package dynamic_proxy_test;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -22,14 +22,12 @@ public class ServiceProxy implements InvocationHandler {
         return o;
     }
 
-    private String morning() {
+    private void morning() {
         System.out.println("早上好");
-        return "早上好";
     }
 
-    private String night() {
+    private void night() {
         System.out.println("晚上好");
-        return "晚上好";
     }
 
     public Object getObject() {
