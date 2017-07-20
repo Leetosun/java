@@ -7,6 +7,12 @@ import org.junit.Test;
 public class Demo {
 
     @Test
+    public void StringTest(){
+        String s = "000000";
+        System.out.println(s.startsWith("0") && s.endsWith("0"));
+    }
+
+    @Test
     public void stringBuilderTest() {
         System.out.println(new StringBuilder(1).append(2).toString());
         String s = "1";
