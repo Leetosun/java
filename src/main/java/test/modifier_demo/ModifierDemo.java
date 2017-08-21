@@ -12,7 +12,7 @@ public class ModifierDemo {
         DifferentAccessModifier.sProtected = "";
         DifferentAccessModifier.sPublic = "";
         DifferentAccessModifier.sDefault = "";
-        DifferentAccessModifier.mPrivate;
+        DifferentAccessModifier.mPrivate();
         DifferentAccessModifier.mProtected();
         DifferentAccessModifier.mPublic();
         DifferentAccessModifier.mDefault();
