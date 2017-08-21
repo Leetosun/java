@@ -11,6 +11,7 @@ public class ZiZengDemo {
         for (int i = 0; i < 10; i++) {
             //The Value changed at 'a++' is never used
             a = a++;
+            System.out.println(a);
         }
         System.out.println(a);// 0
     }

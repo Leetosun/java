@@ -7,7 +7,7 @@ import org.junit.Test;
 public class Demo {
 
     @Test
-    public void StringTest(){
+    public void StringTest() {
         String s = "000000";
         System.out.println(s.startsWith("0") && s.endsWith("0"));
     }
@@ -55,13 +55,16 @@ public class Demo {
         // Date date2 = sdf.parse("7:00:00");
         // System.out.println(date2.getTime());
 
-        // Date date3 = sdf.parse("2017-05-15 19:30:00".substring("2017-05-15 14:39:00".indexOf(" ")));
+        // Date date3 = sdf.parse("2017-05-15 19:30:00".substring("2017-05-15
+        // 14:39:00".indexOf(" ")));
         // System.out.println(date3.getTime());
 
         // if (date2.getTime() < date1.getTime()) {
-        // System.out.println(date2.getTime() >= date3.getTime() || date3.getTime() >= date1.getTime());
+        // System.out.println(date2.getTime() >= date3.getTime() ||
+        // date3.getTime() >= date1.getTime());
         // }else{
-        // System.out.println(date2.getTime() >= date3.getTime() && date3.getTime() >= date1.getTime());
+        // System.out.println(date2.getTime() >= date3.getTime() &&
+        // date3.getTime() >= date1.getTime());
         // }
 
         // System.out.println("220603199305150012".length());
@@ -74,6 +77,13 @@ public class Demo {
         // Object oo = f1 ;
         // f1[1] = oo;
         // System.out.println("Best Wishes "+f1[1]);
+    }
+
+    @Test
+    public void test2() {
+        String str = "床前明月光，";
+        str.substring(0, str.length() - 1);
+        System.out.println(str);
     }
 
 }
