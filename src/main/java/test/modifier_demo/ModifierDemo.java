@@ -8,14 +8,14 @@ import test.DifferentAccessModifier;
 public class ModifierDemo {
 
     public static void main(String[] args) {
-        DifferentAccessModifier.sPrivate;
-        DifferentAccessModifier.sProtected = "";
+//        DifferentAccessModifier.sPrivate;
+//        DifferentAccessModifier.sProtected = "";
         DifferentAccessModifier.sPublic = "";
-        DifferentAccessModifier.sDefault = "";
-        DifferentAccessModifier.mPrivate();
-        DifferentAccessModifier.mProtected();
+//        DifferentAccessModifier.sDefault = "";
+//        DifferentAccessModifier.mPrivate();
+//        DifferentAccessModifier.mProtected();
         DifferentAccessModifier.mPublic();
-        DifferentAccessModifier.mDefault();
+//        DifferentAccessModifier.mDefault();
     }
 
 }

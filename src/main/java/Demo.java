@@ -86,4 +86,13 @@ public class Demo {
         System.out.println(str);
     }
 
+    @Test
+    public void test3() {
+        for (int i = 0; i < 10; i++) {
+            double d = Math.random();
+            System.out.println(d);
+            System.out.println((int) (d * 3));
+        }
+    }
+
 }
